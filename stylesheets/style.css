@@ -1,0 +1,51 @@
+body{
+    margin: 0px 0px 0px 0px;
+    background-image:url(../images/head.jpg);
+}
+
+/** LIENS ******************************************************** **/
+
+a{
+    position: right;
+}
+
+a#Git{
+    color:#FFFFFF;
+    border: 1px solid #000000;
+    background-color:#000;
+}
+
+a#Plus{
+    color:#FFFFFF;
+    border: 1px solid #000000;
+    background-color:#d43232;
+}
+
+a#Link{
+    color:#FFFFFF;
+    border: 1px solid #000000;
+    background-color:#186bb2;
+}
+
+a#Face{
+    color:#FFFFFF;
+    border: 1px solid #000000;
+    background-color:#2936dd;
+}
+
+/** **************************************************************** **/
+
+#head{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#content{
+    text-align: center;
+    
+    margin-left: 0px;
+    margin-right: 0px;
+    height:450px;
+    width:auto;
+    background-color:rgba(230, 247, 255, 0.92);
+}
