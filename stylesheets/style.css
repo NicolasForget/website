@@ -5,47 +5,161 @@ body{
 
 /** LIENS ******************************************************** **/
 
-a{
-    position: right;
+#links{
+    position:absolute;
+    top:20px;
+	right:20px;
 }
 
-a#Git{
-    color:#FFFFFF;
-    border: 1px solid #000000;
-    background-color:#000;
+#links img{
+    height:70px;
+    width:70px;
 }
 
-a#Plus{
-    color:#FFFFFF;
-    border: 1px solid #000000;
-    background-color:#d43232;
+/** HEADER ********************************************************* **/
+
+#header{
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-a#Link{
-    color:#FFFFFF;
-    border: 1px solid #000000;
-    background-color:#186bb2;
-}
-
-a#Face{
-    color:#FFFFFF;
-    border: 1px solid #000000;
-    background-color:#2936dd;
-}
-
-/** **************************************************************** **/
-
-#head{
-    margin-top: 75px;
-    margin-bottom: 75px;
-}
+/** CONTENT ********************************************************* **/
 
 #content{
-    text-align: center;
+    padding:100px;
+    text-align:center;
     
     margin-left: 0px;
     margin-right: 0px;
-    height:450px;
+    height:200px;/*350px*/
     width:auto;
     background-color:rgba(230, 247, 255, 0.92);
+}
+
+/** FOOTER ******************************************************** **/
+
+#footer{
+    position:absolute;
+    bottom:30px;
+	right:30px;
+}
+
+#footer a{
+    color:#d00000;
+    font-weight: bold;
+}
+
+/** OTHER ********************************************************* **/
+
+*{
+    font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #007edf;
+  text-shadow: none;
+
+  transition: color 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
+}
+
+a:hover, a:focus {text-decoration: underline;}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  color:#222222;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  padding-bottom: 10px;
+  font-size: 32px;
+  background: url('../images/bg_hr.png') repeat-x bottom;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+
+/*******************************************************************************
+Small Device Styles
+*******************************************************************************/
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size:14px;
+  }
+
+  #downloads {
+    display: none;
+  }
+
+  .inner {
+    min-width: 320px;
+    max-width: 480px;
+  }
+
+  #project_title {
+  font-size: 32px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px;
+  }
+
 }
