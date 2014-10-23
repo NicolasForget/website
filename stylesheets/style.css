@@ -12,7 +12,7 @@ body{
 }
 
 #links img{
-    display:inline;
+    visibility:visible!important;
     height:60px;
     width:60px;
 }
