@@ -1,6 +1,8 @@
 body{
     margin: 0px 0px 0px 0px;
     background-image:url(../images/head.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
 }
 
 /** LIENS ******************************************************** **/
@@ -55,6 +57,16 @@ body{
     position:absolute;
     bottom:20px;
 	right:20px;
+}
+
+#footer #heberg,#admin{
+    text-align:right;
+}
+
+#footer #warning{
+    display:inline;
+    text-decoration:underline;
+    font-weight: bold;
 }
 
 #footer a{
