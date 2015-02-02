@@ -11,15 +11,57 @@ links{
 }
 
 links img{
-    height:60px;
-    width:60px;
+    height:80px;
+    width:80px;
 }
 
-/** HEADER ********************************************************* **/
+/** AVATAR & HEADER ********************************************************* **/
+
+avatar{
+    position:absolute;
+    top:100px;
+	left:30px;
+}
+
+avatar img{
+    border: 5px solid #fff;
+    border-radius: 10px;
+    height:30%;
+    width:30%;
+}
 
 header{
-    padding:60px;
-    width: 700px;
+    padding:10px;
+    width:auto;
+    height:250px;
+    background-color:rgba(255, 255, 255, 0.95);
+    background-image:url(../images/head.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:bottom;
+}
+
+/** MENU ********************************************************* **/
+
+menu{
+    position:absolute;
+    bottom:20px;
+	left:40px;
+    border: 8px solid #fff;
+    background-color:#7c7c7c;
+    border-radius: 10px;
+    height:350px;
+    width:230px;
+}
+
+/** CONTENT ********************************************************* **/
+
+content{
+    display:block;
+    margin-left: 0px;
+    margin-right: 0px;
+    height:100%;
+    text-align:center;
 }
 
 #title{
@@ -29,24 +71,6 @@ header{
 #tagline{
     font-style:italic;
     font-size: 20px;
-    padding-left:3em;
-}
-
-/** CONTENT ********************************************************* **/
-
-content{
-    display:block;
-    margin-left: 0px;
-    margin-right: 0px;
-    height:400px;
-    text-align:center;
-    background-color:rgba(255, 255, 255, 0.95);
-}
-
-content *{
-    position:relative;
-    top:150px;
-    /*vertical-align:middle; ** marche pas */
 }
 
 /** FOOTER ******************************************************** **/
@@ -68,6 +92,6 @@ footer #warning{
 }
 
 footer a{
-    color:#d00000;
+    color:#001dff;
     font-weight: bold;
 }

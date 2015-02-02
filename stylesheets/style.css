@@ -1,8 +1,5 @@
 body{
-    margin: 0px 0px 0px 0px;
-    background-image:url(../images/head.jpg);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
+    margin:0px 0px 0px 0px;
 }
 
 *{

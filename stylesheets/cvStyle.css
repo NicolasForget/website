@@ -1,0 +1,18 @@
+@import "style.css";
+
+content{
+    display:block;
+    margin-left: 0px;
+    margin-right: 0px;
+    height:100%;
+    text-align:center;
+}
+
+#title{
+    font-size: 60px;
+}
+
+#tagline{
+    font-style:italic;
+    font-size: 20px;
+}
