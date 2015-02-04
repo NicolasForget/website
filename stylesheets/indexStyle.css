@@ -1,39 +1,36 @@
-/** IMPORT ******************************************************** **/
-
-@import "style.css";
-
 /** LIENS ******************************************************** **/
 
 links{
     position:absolute;
+    z-index:3;
     top:20px;
 	right:20px;
 }
 
 links img{
-    height:80px;
-    width:80px;
+    height:50px;
+    width:50px;
 }
 
 /** AVATAR & HEADER ********************************************************* **/
 
 avatar{
     position:absolute;
-    top:100px;
+    top:50px;
 	left:30px;
 }
 
 avatar img{
     border: 5px solid #fff;
     border-radius: 10px;
-    height:30%;
-    width:30%;
+    height:225px;
+    width:325px;
 }
 
 header{
-    padding:10px;
     width:auto;
-    height:250px;
+    height:100%;
+    height:200px;
     background-color:rgba(255, 255, 255, 0.95);
     background-image:url(../images/head.jpg);
     background-repeat: no-repeat;
@@ -41,20 +38,12 @@ header{
     background-position:bottom;
 }
 
-/** MENU ********************************************************* **/
-
-menu{
-    position:absolute;
-    bottom:20px;
-	left:40px;
-    border: 8px solid #fff;
-    background-color:#7c7c7c;
-    border-radius: 10px;
-    height:350px;
-    width:230px;
-}
-
 /** CONTENT ********************************************************* **/
+
+.navbar{
+    margin:0px;
+    margin-left:355px;
+}
 
 content{
     display:block;
@@ -64,21 +53,34 @@ content{
     text-align:center;
 }
 
-#title{
-    font-size: 60px;
+#carousel{
+    margin-left:auto;
 }
 
-#tagline{
-    font-style:italic;
-    font-size: 20px;
+#imgCar{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#imgCar, #carousel{
+    height:300px;
+    width:500px;    
+}
+
+#capCar{
+    border-radius:5px;
+    background-color:rgba(255, 255, 255, 0.75);
 }
 
 /** FOOTER ******************************************************** **/
 
 footer{
     position:absolute;
-    bottom:20px;
+    top:100px;
 	right:20px;
+    padding:5px;
+    border-radius:5px;
+    background-color:rgba(255, 255, 255, 0.75);
 }
 
 footer #heberg,#admin{
