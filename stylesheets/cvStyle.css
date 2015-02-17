@@ -1,18 +1,69 @@
+nav{
+    background-color:#efefef;
+}
 
+/** HEADER ******************************************************** **/
 
-content{
+header{
+    margin-top:50px;
     display:block;
-    margin-left: 0px;
-    margin-right: 0px;
-    height:100%;
+    padding: 20px;
     text-align:center;
 }
 
-#title{
-    font-size: 60px;
+#profil{
+    margin-top:50px;
+    position:absolute;
+    top:100px;
+	right:50px;
+    height:200px;
+    width:200px;
+    border-radius: 10px;
 }
 
-#tagline{
-    font-style:italic;
-    font-size: 20px;
+/** INFO ******************************************************** **/
+
+info{
+    margin-top:50px;
+    position:absolute;
+    z-index:-3;
+    top:100px;
+	left:50px;
+    padding:10px;
+    border-radius:5px;
+    background-color:rgba(132, 132, 132, 0.75);
 }
+
+/** CV ******************************************************** **/
+
+cv{
+    display:block;
+    margin-left:300px;
+    margin-right:300px;
+    margin-bottom:50px;
+}
+
+h4{
+    font-style:italic;
+}
+
+#date{
+    display:inline;
+    text-decoration:underline;
+}
+
+#name{
+    display:inline;
+    font-size:bold;
+}
+
+/** FORMATION ************************** **/
+
+/** EXPERIENCES ************************** **/
+
+/** COMPETENCES ************************** **/
+
+/** LANGUES ************************** **/
+
+/** INTERETS ************************** **/
+

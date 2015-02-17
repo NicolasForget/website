@@ -14,13 +14,10 @@ links img{
 
 /** AVATAR & HEADER ********************************************************* **/
 
-avatar{
+#avatar{
     position:absolute;
     top:50px;
 	left:30px;
-}
-
-avatar img{
     border: 5px solid #fff;
     border-radius: 10px;
     height:225px;
@@ -40,6 +37,10 @@ header{
 
 /** CONTENT ********************************************************* **/
 
+#title{
+    margin:20px;
+}
+
 .navbar{
     margin:0px;
     margin-left:355px;
@@ -55,6 +56,7 @@ content{
 
 #carousel{
     margin-left:auto;
+    margin-right:auto;
 }
 
 #imgCar{
@@ -63,8 +65,8 @@ content{
 }
 
 #imgCar, #carousel{
-    height:300px;
-    width:500px;    
+    height:405px;
+    width:720px;    
 }
 
 #capCar{
