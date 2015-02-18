@@ -25,13 +25,12 @@ header{
 
 info{
     margin-top:50px;
-    position:absolute;
-    z-index:-3;
+    position:fixed;
     top:100px;
 	left:50px;
     padding:10px;
     border-radius:5px;
-    background-color:rgba(132, 132, 132, 0.75);
+    background-color:rgba(160, 160, 160, 0.75);
 }
 
 /** CV ******************************************************** **/
@@ -54,7 +53,11 @@ h4{
 
 #name{
     display:inline;
-    font-size:bold;
+    font-weight:bold;
+}
+
+#unit{
+    padding:10px;
 }
 
 /** FORMATION ************************** **/
