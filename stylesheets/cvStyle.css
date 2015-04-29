@@ -43,11 +43,12 @@ info{
 
 /** CV ******************************************************** **/
 
-cv{
+#cv{
     display:block;
     margin-left:300px;
     margin-right:300px;
     margin-bottom:50px;
+    min-width:400px;
 }
 
 h4{
@@ -60,6 +61,7 @@ h4{
 }
 
 #name{
+    color:black;
     display:inline;
     font-weight:bold;
 }

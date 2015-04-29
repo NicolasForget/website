@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+    
+    <script>
+    function noPics(){
+        if(document.body.clientWidth <= "1200"){
+            document.getElementById("profil").style.display="none";
+            document.getElementById("cv").style.margin="0px 300px 50px 50px";
+        }else{
+            document.getElementById("profil").style.display="block";
+            document.getElementById("cv").style.margin="0px 300px 50px 300px";
+        }
+    }
+    </script>
+    
     <head>
         <meta charset='utf-8'>
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -8,7 +21,7 @@
         <title>NicolasForget - CV</title>
     </head>
 
-    <body>
+    <body onresize="noPics()">
         <!-- http://users.polytech.unice.fr/~forget/game/poke_ball.html -->
         <nav class="navbar navbar-fixed-top navbar">
             <div class="navbar-header">
@@ -47,7 +60,7 @@
 
         <a href="images/nicolas.png"><img id="profil" src="images/nicolas.png"/></a>
             
-        <cv>
+        <div id="cv">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3>Formation </h3>
@@ -55,17 +68,17 @@
                 <div class="panel-body">
                     <div id="unit">
                         <div id="date">Depuis 2012</div>
-                        <div id="name">POLYTECH Nice Sophia</div>
+                        <a href="http://www.polytechnice.fr/"><div id="name">POLYTECH Nice Sophia</div></a>
                         <div id="detail">Science Informatique ; Système et Application Réparties</div>
                     </div>
                     <div id="unit">
                         <div id="date">2012-2012</div>
-                        <div id="name">IUT QLIO, Sophia-Antipolis</div>
+                        <a href="http://www.iut-qlio.net/"><div id="name">IUT QLIO, Sophia-Antipolis</div></a>
                         <div id="detail">DUT Qualité Logistique Industriel et Organisation</div>
                     </div>
                     <div id="unit">
                         <div id="date">2009-2012</div>
-                        <div id="name">Lycée Alexis de Tocqueville, Grasse</div>
+                        <a href="http://www.ac-nice.fr/tocqueville/"><div id="name">Lycée Alexis de Tocqueville, Grasse</div></a>
                         <div id="detail">Bac Scientifique option mathématiques</div>
                     </div>
                 </div>
@@ -77,6 +90,31 @@
                 </div>
                 <div class="panel-body">
                     <h4>Projets d'études</h4>
+                    
+                    <div id="unit">
+                        <div id="date">2015 (3 semaines)</div>
+                        <div id="name">PolyMap : Une application mobile de localisation</div>
+                        <div id="detail">Développement d'une application Android de collecte d'informations de géolocalisation sécurisé</div>
+                    </div>
+                    
+                    <div id="unit">
+                        <div id="date">2014 (3 semaines)</div>
+                        <div id="name">SamMe : Une application mobile de co-voiturage intelligente</div>
+                        <div id="detail">Développement d'une application Android de co-voiturage axée réseau social qui propose un conducteur</div>
+                    </div>
+                    
+                    <div id="unit">
+                        <div id="date">2014 (4 mois)</div>
+                        <div id="name">PolyTweet : Un réseaux social pour la vie étudiante de l'école</div>
+                        <div id="detail">Développement d'un réseaux social propre à notre école grace à J2EE et .Net</div>
+                    </div>
+                    
+                    <div id="unit">
+                        <div id="date">2014 (4 mois)</div>
+                        <div id="name">PokeBall : Un jeux en ligne Angry Birds version Pokémon</div>
+                        <div id="detail">Développement d'un jeux de lancé</div>
+                    </div>
+                    
                     <div id="unit">
                         <div id="date">2014 (3 semaines)</div>
                         <div id="name">Environnement 3D et Informatique Ambiante</div>
@@ -87,6 +125,7 @@
                         <div id="name">Projet DeViNT (Déficient Visuels et Nouvelles Technologies)</div>
                         <div id="detail">Création d'un jeu vidéo pour déficients visuels</div>
                     </div>
+                    
                     <div id="unit">
                         <div id="date">2013 (5 mois)</div>
                         <div id="name">Myrmes</div>
@@ -99,21 +138,25 @@
                         <div id="name">Conseiller vente ; E.Leclerc Grasse</div>
                         <div id="detail">Relation client, information sur les technologies multimédia</div>
                     </div>
+                    
                     <div id="unit">
                         <div id="date">2012 (3 mois)</div>
                         <div id="name">Stage logistique ; Mairie de Grasse</div>
                         <div id="detail">Etude et optimisation des processus de mise en place d'évènements</div>
                     </div>
+                    
                     <div id="unit">
                         <div id="date">2011 (2 mois)</div>
                         <div id="name">Conseiller vente ; Decathlon Grasse</div>
                         <div id="detail">Relation client, premier contact avec la vie active</div>
                     </div>
+                    
                     <div id="unit">
                         <div id="date">2011 (3 semaines)</div>
                         <div id="name">Stage exploitation ; Decathlon Grasse</div>
                         <div id="detail">Aménagement de la zone de transit valorisé à 71 427€/ans</div>
                     </div>
+                    
                     <div id="unit">
                         <div id="date">2008 (1 semaine)</div>
                         <div id="name">Stage d'observation ; Cannes Aviation</div>
@@ -194,7 +237,7 @@
                 </div>
             </div>
             
-        </cv>
+        </div>
 
     </body>
 </html>
