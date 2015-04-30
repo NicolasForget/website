@@ -13,7 +13,7 @@ header{
 
 /** INFO ******************************************************** **/
 
-info{
+#info{
     margin-top:50px;
     position:fixed;
     top:100px;
@@ -23,11 +23,30 @@ info{
     background-color:rgba(160, 160, 160, 0.75);
 }
 
+#info a{
+    display:inline-block;
+}
+
+#etiquetteR{
+    margin-left:15px;
+    display:inline-block;
+}
+
+#etiquetteL{
+    margin-top:50px;
+    display:block;
+    position:fixed;
+    top:120px;
+	right:0px;
+    padding:10px;
+    border-radius:5px 0px 0px 5px;
+    background-color:rgba(160, 160, 160, 0.75);
+}
+
 #pdf{
     position:fixed;
     bottom:100px;
 	right:50px;
-    padding:10px;
     height:100px;
     width:100px;
 }

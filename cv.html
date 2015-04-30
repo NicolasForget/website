@@ -2,13 +2,43 @@
 <html>
     
     <script>
-    function noPics(){
+    function noPic(){
         if(document.body.clientWidth <= "1200"){
             document.getElementById("profil").style.display="none";
-            document.getElementById("cv").style.margin="0px 300px 50px 50px";
+            document.getElementById("cv").style.margin="0px 300px 50px 50px";  
         }else{
             document.getElementById("profil").style.display="block";
             document.getElementById("cv").style.margin="0px 300px 50px 300px";
+        }
+    }
+        
+    function showInfo(){
+        document.getElementById("info").style.display="block";
+        document.getElementById("etiquetteL").style.display="none"
+    }
+    
+    function hideInfo(){
+        document.getElementById("info").style.display="none";
+        document.getElementById("etiquetteL").style.display="block";
+    }
+    
+    function noInfo(){
+        if(document.body.clientWidth <= "800"){
+            hideInfo();
+        }else{
+            showInfo();
+        }
+    }
+    
+    function noPDF(){
+        if(document.body.clientWidth <= "600"){
+            document.getElementById("pdf").style.position="relative";
+            document.getElementById("pdf").style.bottom="0px";
+            document.getElementById("pdf").style.left="150px";
+        }else{
+            document.getElementById("pdf").style.position="fixed";
+            document.getElementById("pdf").style.bottom="100px";
+            document.getElementById("pdf").style.left="auto";
         }
     }
     </script>
@@ -21,7 +51,7 @@
         <title>NicolasForget - CV</title>
     </head>
 
-    <body onresize="noPics()">
+    <body onload="noPic(), noInfo(), noPDF()" onresize="noPic(), noInfo(), noPDF()">
         <!-- http://users.polytech.unice.fr/~forget/game/poke_ball.html -->
         <nav class="navbar navbar-fixed-top navbar">
             <div class="navbar-header">
@@ -42,11 +72,13 @@
             <h6 id="tagline">Toujour en cours de développement...</h6>
         </header>
         
-        <info>
+        <div id="etiquetteL" onclick="showInfo()"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></div>
+        <div id="info">
             <a href="index.html">
                 <div id="names"><h3>Nicolas Forget</h3></div>
             </a>
-            <div id="age">21 ans</div>
+            <span id="etiquetteR" onclick="hideInfo()" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <div id="age">22 ans</div>
             <div id="addr">
                 26 chemin du vieux pont,</br>
                 villa des camperousse n° 17</br>
@@ -54,9 +86,7 @@
             </div>
             <div id="mail"><a href="mailto:nicolas.forget23@gmail.com">nicolas.forget23@gmail.com</a></div>
             <div id="tel">06.31.98.91.55</div>
-        </info>
-
-        <a href="docs/CV_Nicolas_Forget.pdf"><img id="pdf" src="images/lnk/PDF.png"/></a>
+        </div>
 
         <a href="images/nicolas.png"><img id="profil" src="images/nicolas.png"/></a>
             
@@ -236,6 +266,8 @@
                     </div>
                 </div>
             </div>
+            
+            <a href="docs/CV_Nicolas_Forget.pdf"><img id="pdf" src="images/lnk/PDF.png"/></a>
             
         </div>
 
